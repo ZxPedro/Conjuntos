@@ -29,7 +29,7 @@ function relacao(array $vetorA, array $vetorB): string
     sort($vetorB);
     for ($i = 0; $i < count($vetorA); $i++) {
         for ($j = 0; $j < count($vetorB); $j++) {
-            $resultado[] .= "{" . $vetorA[$i] . "," . $vetorB[$j] . "}";
+            $resultado[] .= "(" . $vetorA[$i] . "," . $vetorB[$j] . ")";
         };
     };
     return implode(",", $resultado);
